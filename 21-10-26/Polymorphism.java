@@ -1,0 +1,33 @@
+package Fundamentals;
+
+public class Polymorphism {
+
+    public static void main(String[] args) {
+
+        Calculator c = new Calculator();
+
+        c.dis(10, 20);
+        c.dis(10, 20, 30);
+        c.dis(10, 0.20, 30);
+        c.dis("Maria Anitta");
+    }
+}
+
+class Calculator {
+
+    void dis(int a, int b) {
+        System.out.println("Multiplication: " + (a * b));
+    }
+
+    void dis(int a, int b, int c) {
+        System.out.println("Addition: " + (a + b + c));
+    }
+
+    void dis(int a, double b, int c) {
+        System.out.println("Calculation: " + (a * b + c));
+    }
+
+    void dis(String name) {
+        System.out.println("Welcome " + name);
+    }
+}
